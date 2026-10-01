@@ -1,5 +1,5 @@
 /* =============================================
-   VENNELA SHARMA — PORTFOLIO
+   VENNELA SHARMA · PORTFOLIO
    ============================================= */
 
 /* --- TOKENS --- */
@@ -283,7 +283,7 @@ a { text-decoration: none; color: inherit; }
   z-index: 2;
   pointer-events: none;
 }
-/* Hide the "scroll" text label — line alone is cleaner */
+/* Hide the "scroll" text label, the line alone is cleaner */
 .hero-scroll span { display: none; }
 .scroll-line {
   width: 1px; height: 40px;

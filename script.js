@@ -1,5 +1,5 @@
 /* =============================================
-   VENNELA SHARMA — PORTFOLIO SCRIPT
+   VENNELA SHARMA · PORTFOLIO SCRIPT
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
