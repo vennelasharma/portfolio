@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vennela Sharma — Cybersecurity</title>
+    <meta name="description" content="Final-year cybersecurity student at Kristiania (BSc, June 2027). Open to graduate roles and internships in security operations, secure development and GRC in Oslo." />
+    <meta property="og:title" content="Vennela Sharma — Cybersecurity" />
+    <meta property="og:description" content="Final-year cybersecurity student. Builds, defends, and explains security. Open to graduate roles and internships in Oslo." />
+    <meta property="og:image" content="https://vennelasharma.github.io/portfolio/img/cv-bilde.jpg" />
+    <meta property="og:url" content="https://vennelasharma.github.io/portfolio/" />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
@@ -19,6 +24,7 @@
         <ul class="nav-links" id="nav-links">
           <li><a href="#about" class="nav-link">about</a></li>
           <li><a href="#projects" class="nav-link">projects</a></li>
+          <li><a href="#coursework" class="nav-link">coursework</a></li>
           <li><a href="#skills" class="nav-link">skills</a></li>
           <li><a href="#experience" class="nav-link">experience</a></li>
           <li><a href="#contact" class="nav-link nav-cta">contact</a></li>
@@ -31,18 +37,18 @@
 
     <!-- HERO -->
     <section id="home" class="hero">
-      <canvas id="hero-canvas"></canvas>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-content">
         <div class="hero-label" data-reveal>
-          <span class="dot"></span> Available for internship · Oslo, Norway
+          <span class="dot"></span> Open to graduate roles &amp; internships · Oslo, Norway
         </div>
         <h1 data-reveal>
           <span class="hero-line">Vennela</span>
           <span class="hero-line accent">Sharma</span>
         </h1>
         <p class="hero-sub" data-reveal>
-          Cybersecurity student · Kristiania University College<br/>
-          Passionate about offensive security, cloud defence & secure systems
+          Final-year cybersecurity student · Kristiania University College<br/>
+          I build secure software, defend systems &mdash; and explain security to people who aren't security people.
         </p>
         <div class="hero-actions" data-reveal>
           <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -52,18 +58,18 @@
         </div>
         <div class="hero-stats" data-reveal>
           <div class="stat">
-            <span class="stat-num">3rd</span>
-            <span class="stat-label">Year BSc</span>
+            <span class="stat-num">2027</span>
+            <span class="stat-label">BSc graduation</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-num">20+</span>
-            <span class="stat-label">Security Tools</span>
+            <span class="stat-num">17</span>
+            <span class="stat-label">Security &amp; CS courses</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat">
-            <span class="stat-num">🔐</span>
-            <span class="stat-label">Security Cleared</span>
+            <span class="stat-num">IT1/IT2</span>
+            <span class="stat-label">Taught in upper sec.</span>
           </div>
         </div>
       </div>
@@ -97,13 +103,14 @@
           <div class="about-text-col">
             <div class="section-tag">// about me</div>
             <h2>Building secure systems,<br/><span class="accent">one layer at a time.</span></h2>
-            <p>I'm a Cyber Security student at Kristiania University College, entering my final year with hands-on experience across offensive security, cloud defence, and web development.</p>
-            <p>What sets me apart: I hold a valid Norwegian security clearance from my service with HMKG, I have managed real IT infrastructure at ENDS Barbershop, and I have taught programming to high school students, which means I can explain complex security concepts clearly, not just execute them.</p>
-            <p>I'm actively seeking internships or junior roles in cybersecurity starting from autumn 2026. I'm drawn to both red team and blue team work, and I want to be somewhere I can keep learning fast.</p>
+            <p>I'm in my final year of a BSc in Cyber Security at Kristiania University College, graduating in June 2027. My coursework spans cyber defence, cloud and IoT/OT security, governance and risk, ethical hacking, and a solid programming foundation in C, Java, Python and algorithms.</p>
+            <p>I'm happiest where code, defence and people meet: writing software, understanding how systems are attacked so I can protect them, and turning technical risk into something a non-technical audience can act on. I've taught programming (IT1 and IT2) in upper secondary school, run the IT for a small business end to end, and served in His Majesty The King's Guard.</p>
+            <p>I'm looking for a <strong>graduate role or internship</strong> where I can keep learning across the field &mdash; security operations, secure development, GRC or security awareness &mdash; and grow into the area that fits best.</p>
             <div class="about-badges">
-              <span class="badge"><i class="fa fa-shield-halved"></i> Security Cleared (HMKG)</span>
-              <span class="badge"><i class="fa fa-graduation-cap"></i> BSc Cybersecurity</span>
-              <span class="badge"><i class="fa fa-language"></i> NO / EN / PB / HI</span>
+              <span class="badge"><i class="fa fa-graduation-cap"></i> BSc Cyber Security · 2027</span>
+              <span class="badge"><i class="fa fa-shield-halved"></i> Ex-HMKG</span>
+              <span class="badge"><i class="fa fa-chalkboard-user"></i> Security communicator</span>
+              <span class="badge"><i class="fa fa-language"></i> Norwegian · English · Punjabi · Hindi</span>
             </div>
           </div>
         </div>
@@ -116,7 +123,7 @@
         <div class="section-header">
           <div class="section-tag">// projects</div>
           <h2>Things I've built</h2>
-          <p class="section-sub">A mix of security-focused work, web development, and tooling.</p>
+          <p class="section-sub">Security tooling, security awareness, and real-world IT &mdash; with code you can read.</p>
         </div>
         <div class="projects-grid">
 
@@ -125,74 +132,120 @@
             <div class="card-header">
               <div class="card-icon"><i class="fa fa-fish"></i></div>
               <div class="card-links">
-                <a href="https://vennelasharma.github.io/phishing_awareness/" target="_blank" title="Live Demo"><i class="fa fa-arrow-up-right-from-square"></i></a>
+                <a href="https://vennelasharma.github.io/phishing_awareness/" target="_blank" title="Live demo" aria-label="Live demo"><i class="fa fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/vennelasharma/phishing_awareness" target="_blank" title="Source code" aria-label="Source code"><i class="fab fa-github"></i></a>
               </div>
             </div>
-            <div class="featured-badge">Security Project</div>
+            <div class="featured-badge">Security awareness</div>
             <h3>Phishing Awareness Platform</h3>
-            <p>Educational web platform teaching users to identify phishing emails, malicious links, and social engineering tactics. Built with a focus on clear, actionable security guidance.</p>
+            <p>Educational web platform that teaches non-technical users to spot phishing emails, malicious links and social engineering. Designed around one question: what does an ordinary employee actually need to notice, and how do you make that stick?</p>
             <div class="card-tags">
-              <span>Cybersecurity</span><span>Education</span><span>HTML/CSS/JS</span>
+              <span>Security awareness</span><span>Social engineering</span><span>HTML/CSS/JS</span>
             </div>
           </div>
 
           <!-- Password Analyzer -->
-<div class="project-card" data-card>
-  <div class="card-header">
-    <div class="card-icon"><i class="fa fa-lock"></i></div>
-    <div class="card-links">
-      <a href="https://vennelasharma.github.io/password_analyzer/" target="_blank" title="Live Demo"><i class="fa fa-arrow-up-right-from-square"></i></a>
-      <a href="https://github.com/vennelasharma/password-analyzer" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    </div>
-  </div>
-  <h3>Password Strength Analyzer</h3>
-  <p>Client-side security tool that calculates Shannon entropy, estimates crack time across three attack scenarios (online, offline MD5, GPU cluster), and checks against 200 common passwords. Zero backend, all analysis runs locally in the browser.</p>
-  <div class="card-tags">
-    <span>JavaScript</span><span>Cryptography</span><span>Security</span><span>Frontend</span>
-  </div>
-</div>
-
-          <!-- ENDS Website -->
           <div class="project-card" data-card>
             <div class="card-header">
-              <div class="card-icon"><i class="fa fa-globe"></i></div>
+              <div class="card-icon"><i class="fa fa-lock"></i></div>
               <div class="card-links">
-                <a href="https://www.endsbarber.no" target="_blank" title="Live Demo"><i class="fa fa-arrow-up-right-from-square"></i></a>
+                <a href="https://vennelasharma.github.io/password_analyzer/" target="_blank" title="Live demo" aria-label="Live demo"><i class="fa fa-arrow-up-right-from-square"></i></a>
+                <a href="https://github.com/vennelasharma/password-analyzer" target="_blank" title="Source code" aria-label="Source code"><i class="fab fa-github"></i></a>
               </div>
             </div>
-            <h3>ENDS Barber — Production Site</h3>
-            <p>Designed and built endsbarber.no from scratch. I also manage the underlying IT stack: booking system, payment flows, RBAC policies, and network segmentation for a live business.</p>
+            <h3>Password Strength Analyzer</h3>
+            <p>Client-side tool that calculates Shannon entropy, estimates crack time across three attack scenarios (online, offline MD5, GPU cluster) and checks against common passwords. Everything runs locally in the browser &mdash; no password ever leaves the device.</p>
             <div class="card-tags">
-              <span>Webflow</span><span>IT Operations</span><span>RBAC</span>
+              <span>JavaScript</span><span>Cryptography</span><span>Privacy by design</span>
             </div>
           </div>
-          
 
-          <!-- Car Scrap -->
+          <!-- Vehicle data -->
           <div class="project-card" data-card>
             <div class="card-header">
               <div class="card-icon"><i class="fa fa-database"></i></div>
               <div class="card-links">
-                <a href="https://github.com/vennelasharma/bilskraphaug" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/vennelasharma/bilskraphaug" target="_blank" title="Source code" aria-label="Source code"><i class="fab fa-github"></i></a>
               </div>
             </div>
             <h3>Vehicle Data Management System</h3>
-            <p>Java application with full CRUD operations against a MySQL database. Demonstrates OOP patterns, JDBC connections, file handling, and menu-driven CLI interaction.</p>
+            <p>Java application with full CRUD operations against a MySQL database. Object-oriented design, JDBC connections, file handling and a menu-driven CLI.</p>
             <div class="card-tags">
               <span>Java</span><span>MySQL</span><span>JDBC</span><span>OOP</span>
             </div>
           </div>
 
-          <!-- CTA Card -->
-          <div class="project-card project-cta" data-card>
-            <div class="cta-inner">
-              <i class="fa fa-code-branch"></i>
-              <h3>More coming soon</h3>
-              <p>Currently working on CTF write-ups and a home lab network project. Follow my GitHub for updates.</p>
-              <a href="https://github.com/vennelasharma" class="btn btn-ghost btn-sm" target="_blank">
-                <i class="fab fa-github"></i> GitHub Profile
-              </a>
+          <!-- ENDS: real-world IT -->
+          <div class="project-card featured" data-card>
+            <div class="card-header">
+              <div class="card-icon"><i class="fa fa-network-wired"></i></div>
+              <div class="card-links">
+                <a href="https://www.endsbarber.no" target="_blank" title="Live site" aria-label="Live site"><i class="fa fa-arrow-up-right-from-square"></i></a>
+              </div>
             </div>
+            <div class="featured-badge">Real-world IT</div>
+            <h3>ENDS Barbershop &mdash; Website &amp; IT Operations</h3>
+            <p>Designed and built endsbarber.no, and owned the IT behind a live business: booking system, payment flows, access control (RBAC), password policy and network segmentation. Security decisions here had to work for staff with no IT background &mdash; practical constraints, not lab conditions.</p>
+            <div class="card-tags">
+              <span>Webflow</span><span>IT operations</span><span>Access control</span><span>Network segmentation</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COURSEWORK -->
+    <section id="coursework" class="section coursework-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">// coursework</div>
+          <h2>What I've studied</h2>
+          <p class="section-sub">BSc Cyber Security, Kristiania University College &middot; 2024&ndash;2027</p>
+        </div>
+        <div class="course-grid">
+
+          <div class="course-group">
+            <h3><i class="fa fa-shield-halved"></i> Security &amp; Defence</h3>
+            <ul>
+              <li><span class="code">TK2100</span> Information Security</li>
+              <li><span class="code">CYB2100</span> Cyber Defence</li>
+              <li><span class="code">SKY2100</span> Cloud Security</li>
+              <li><span class="code">ETH2100</span> Ethical Hacking</li>
+              <li><span class="code">IOS3100</span> IoT/OT Security <span class="now">now</span></li>
+            </ul>
+          </div>
+
+          <div class="course-group">
+            <h3><i class="fa fa-scale-balanced"></i> Governance &amp; Risk</h3>
+            <ul>
+              <li><span class="code">GRC1100</span> Governance, Risk and Compliance <span class="now">now</span></li>
+              <li><span class="code">ESB1100</span> Ethics, Social Responsibility &amp; Sustainability</li>
+              <li><span class="code">BU5300</span> IT Project Management</li>
+            </ul>
+          </div>
+
+          <div class="course-group">
+            <h3><i class="fa fa-code"></i> Programming &amp; Computer Science</h3>
+            <ul>
+              <li><span class="code">PG3401</span> C Programming for Linux</li>
+              <li><span class="code">PG4200</span> Algorithms and Data Structures</li>
+              <li><span class="code">PGR107</span> Python Programming</li>
+              <li><span class="code">PGR112</span> Object-Oriented Programming</li>
+              <li><span class="code">PGR102</span> Introduction to Programming</li>
+              <li><span class="code">DB1102</span> Databases</li>
+              <li><span class="code">TK1104</span> Digital Technology</li>
+              <li><span class="code">PRO105</span> Creative Web Project</li>
+            </ul>
+          </div>
+
+          <div class="course-group">
+            <h3><i class="fa fa-people-group"></i> Projects &amp; Method</h3>
+            <ul>
+              <li><span class="code">IT2000</span> Agile Project <span class="now">now</span></li>
+              <li><span class="code">PJ6100</span> Research Methods <span class="next">spring 2027</span></li>
+              <li><span class="code">BAO304</span> Bachelor Project with Industry Partner <span class="next">spring 2027</span></li>
+            </ul>
           </div>
 
         </div>
@@ -204,58 +257,65 @@
       <div class="container">
         <div class="section-header">
           <div class="section-tag">// skills</div>
-          <h2>Tools & Technologies</h2>
+          <h2>Tools &amp; Technologies</h2>
         </div>
         <div class="skills-layout">
           <div class="skill-group">
-            <h3><span class="group-num">01</span> Security & Pentesting</h3>
+            <h3><span class="group-num">01</span> Defence &amp; Analysis</h3>
             <div class="skill-list">
-              <div class="skill-item"><img src="img/kali.png" alt="Kali Linux"/><span>Kali Linux</span></div>
-              <div class="skill-item"><img src="img/metasploit.png" alt="Metasploit"/><span>Metasploit</span></div>
-              <div class="skill-item"><img src="img/nmap.png" alt="Nmap"/><span>Nmap</span></div>
-              <div class="skill-item"><img src="img/wireshark.png" alt="Wireshark"/><span>Wireshark</span></div>
-              <div class="skill-item"><img src="img/nessus.png" alt="Nessus"/><span>Nessus</span></div>
-              <div class="skill-item"><img src="img/owaspzap.png" alt="OWASP ZAP"/><span>OWASP ZAP</span></div>
-              <div class="skill-item"><img src="img/nikto.png" alt="Nikto"/><span>Nikto</span></div>
-              <div class="skill-item"><img src="img/john.png" alt="John the Ripper"/><span>John the Ripper</span></div>
+              <div class="skill-item"><img src="img/splunk.png" alt=""/><span>Splunk</span></div>
+              <div class="skill-item"><img src="img/SIEM.png" alt=""/><span>SIEM &amp; Log Analysis</span></div>
+              <div class="skill-item"><img src="img/EDR.png" alt=""/><span>EDR</span></div>
+              <div class="skill-item"><img src="img/wireshark.png" alt=""/><span>Wireshark</span></div>
+              <div class="skill-item"><img src="img/MITRE.PNG" alt=""/><span>MITRE ATT&amp;CK</span></div>
             </div>
           </div>
           <div class="skill-group">
-            <h3><span class="group-num">02</span> Frameworks & Methodology</h3>
+            <h3><span class="group-num">02</span> Programming &amp; Web</h3>
             <div class="skill-list">
-              <div class="skill-item"><img src="img/MITRE.PNG" alt="Mitre"/><span>MITRE ATT&CK</span></div>
-              <div class="skill-item"><img src="img/OWASP.png" alt="Owasp10"/><span>OWASP Top 10</span></div>
-              <div class="skill-item"><img src="img/PTES.png" alt="PTES"/><span>PTES</span></div>
+              <div class="skill-item"><img src="img/c.png" alt=""/><span>C</span></div>
+              <div class="skill-item"><img src="img/c++.jpg" alt=""/><span>C++</span></div>
+              <div class="skill-item"><img src="img/python.png" alt=""/><span>Python</span></div>
+              <div class="skill-item"><img src="img/java.png" alt=""/><span>Java</span></div>
+              <div class="skill-item"><img src="img/javascript.png" alt=""/><span>JavaScript</span></div>
+              <div class="skill-item"><img src="img/html.png" alt=""/><span>HTML &amp; CSS</span></div>
+              <div class="skill-item"><img src="img/mysql.png" alt=""/><span>MySQL</span></div>
+              <div class="skill-item"><i class="fa fa-diagram-project skill-icon"></i><span>Algorithms &amp; Data Structures</span></div>
             </div>
           </div>
           <div class="skill-group">
-            <h3><span class="group-num">03</span> Programming & Web</h3>
+            <h3><span class="group-num">03</span> Cloud &amp; Infrastructure</h3>
             <div class="skill-list">
-              <div class="skill-item"><img src="img/c.png" alt="C"/><span>C</span></div>
-              <div class="skill-item"><img src="img/c++.jpg" alt="C"/><span>C++</span></div>
-              <div class="skill-item"><img src="img/python.png" alt="Python"/><span>Python</span></div>
-              <div class="skill-item"><img src="img/javascript.png" alt="JavaScript"/><span>JavaScript</span></div>
-              <div class="skill-item"><img src="img/java.png" alt="Java"/><span>Java</span></div>
-              <div class="skill-item"><img src="img/html.png" alt="HTML & CSS"/><span>HTML & CSS</span></div>
-              <div class="skill-item"><img src="img/mysql.png" alt="MySQL"/><span>MySQL</span></div>
+              <div class="skill-item"><img src="img/azure.png" alt=""/><span>Azure</span></div>
+              <div class="skill-item"><img src="img/entra.png" alt=""/><span>Entra ID</span></div>
+              <div class="skill-item"><img src="img/powershell.png" alt=""/><span>PowerShell</span></div>
+              <div class="skill-item"><img src="img/docker.png" alt=""/><span>Docker &amp; Kubernetes</span></div>
+              <div class="skill-item"><img src="img/encryption.png" alt=""/><span>Encryption</span></div>
+              <div class="skill-item"><i class="fa fa-microchip skill-icon"></i><span>IoT/OT Security</span></div>
             </div>
           </div>
           <div class="skill-group">
-            <h3><span class="group-num">04</span> Cloud & Infrastructure</h3>
+            <h3><span class="group-num">04</span> Governance, Risk &amp; Compliance</h3>
             <div class="skill-list">
-              <div class="skill-item"><img src="img/azure.png" alt="Azure"/><span>Azure</span></div>
-              <div class="skill-item"><img src="img/entra.png" alt="EntraID"/><span>Entra ID</span></div>
-              <div class="skill-item"><img src="img/powershell.png" alt="PowerShell"/><span>PowerShell</span></div>
-              <div class="skill-item"><img src="img/docker.png" alt="Docker"/><span>Docker & Kubernetes</span></div>
-              <div class="skill-item"><img src="img/encryption.png" alt="Encryption"/><span>Encryption</span></div>
+              <div class="skill-item"><i class="fa fa-certificate skill-icon"></i><span>ISO/IEC 27001</span></div>
+              <div class="skill-item"><i class="fa fa-triangle-exclamation skill-icon"></i><span>Risk Assessment &amp; Treatment</span></div>
+              <div class="skill-item"><i class="fa fa-list-check skill-icon"></i><span>Statement of Applicability</span></div>
+              <div class="skill-item"><img src="img/OWASP.png" alt=""/><span>OWASP Top 10</span></div>
+              <div class="skill-item"><i class="fa fa-chalkboard-user skill-icon"></i><span>Security Awareness</span></div>
             </div>
           </div>
           <div class="skill-group">
-            <h3><span class="group-num">05</span> Defence & Analysis</h3>
+            <h3><span class="group-num">05</span> Offensive Security &amp; Testing</h3>
             <div class="skill-list">
-              <div class="skill-item"><img src="img/splunk.png" alt="Splunk"/><span>Splunk</span></div>
-              <div class="skill-item"><img src="img/SIEM.png" alt="SIEM"/><span>SIEM & Log Analysis</span></div>
-              <div class="skill-item"><img src="img/EDR.png" alt="EDR"/><span>EDR</span></div>
+              <div class="skill-item"><img src="img/kali.png" alt=""/><span>Kali Linux</span></div>
+              <div class="skill-item"><img src="img/nmap.png" alt=""/><span>Nmap</span></div>
+              <div class="skill-item"><img src="img/metasploit.png" alt=""/><span>Metasploit</span></div>
+              <div class="skill-item"><img src="img/nessus.png" alt=""/><span>Nessus</span></div>
+              <div class="skill-item"><img src="img/owaspzap.png" alt=""/><span>OWASP ZAP</span></div>
+              <div class="skill-item"><img src="img/nikto.png" alt=""/><span>Nikto</span></div>
+              <div class="skill-item"><img src="img/john.png" alt=""/><span>John the Ripper</span></div>
+              <div class="skill-item"><img src="img/PTES.png" alt=""/><span>PTES</span></div>
+            </div>
           </div>
         </div>
       </div>
@@ -266,17 +326,17 @@
       <div class="container">
         <div class="section-header">
           <div class="section-tag">// experience</div>
-          <h2>Background & Timeline</h2>
+          <h2>Background &amp; Timeline</h2>
         </div>
         <div class="timeline">
 
           <div class="tl-item" data-tl>
             <div class="tl-dot"></div>
-            <div class="tl-date">2024 — Present</div>
+            <div class="tl-date">2024 — 2027 (expected)</div>
             <div class="tl-body">
               <div class="tl-role">BSc Cyber Security</div>
-              <div class="tl-org">Kristiania University College</div>
-              <p>Core curriculum covering network security, penetration testing, secure coding, cryptography, and cloud security. Labs using Kali Linux, Wireshark, Metasploit, and Azure environments.</p>
+              <div class="tl-org">Kristiania University College · Oslo</div>
+              <p>Cyber defence, cloud and IoT/OT security, GRC, ethical hacking, C, algorithms and data structures. Hands-on labs with Kali Linux, Wireshark, Splunk and Azure. Final semester: research methods and a bachelor project with an industry partner (spring 2027).</p>
             </div>
           </div>
 
@@ -286,7 +346,7 @@
             <div class="tl-body">
               <div class="tl-role">Substitute IT Teacher</div>
               <div class="tl-org">Valle Hovin VGS · Oslo Municipality</div>
-              <p>Teaching IT1 and IT2: JavaScript, HTML/CSS, Python, and web technologies. Planning lessons and guiding students through programming projects and it sharpens my ability to communicate technical concepts clearly.</p>
+              <p>Taught IT1 and IT2: JavaScript, HTML/CSS, Python and web technologies. Planned lessons and guided students through programming projects &mdash; daily practice in making technical concepts clear to beginners.</p>
             </div>
           </div>
 
@@ -294,9 +354,9 @@
             <div class="tl-dot"></div>
             <div class="tl-date">2024 — 2026</div>
             <div class="tl-body">
-              <div class="tl-role">IT & Media Manager</div>
+              <div class="tl-role">IT &amp; Media Manager</div>
               <div class="tl-org">ENDS Barbershop · Lillestrøm</div>
-              <p>Full ownership of IT operations: website, booking system, payment integrations, and network setup. Implemented RBAC, password policies, and network segmentation for a live production environment.</p>
+              <p>Full ownership of IT operations: website, booking system, payment integrations and network setup. Implemented role-based access control, a password policy and network segmentation for a live production environment.</p>
             </div>
           </div>
 
@@ -304,19 +364,19 @@
             <div class="tl-dot"></div>
             <div class="tl-date">2023 — 2024</div>
             <div class="tl-body">
-              <div class="tl-role">Guard — Security Clearance Holder</div>
-              <div class="tl-org">Norwegian Armed Forces (HMKG) · Oslo</div>
-              <p>Completed compulsory military service with HMKG, holding a valid Norwegian security clearance. Developed discipline, operational decision-making under pressure, and leadership as a trusted representative (Tillitsvalgt).</p>
+              <div class="tl-role">Guard</div>
+              <div class="tl-org">His Majesty The King's Guard (HMKG) · Norwegian Armed Forces</div>
+              <p>Compulsory military service, during which I held a Norwegian security clearance. Built discipline and decision-making under pressure, and served as elected representative (tillitsvalgt).</p>
             </div>
           </div>
 
           <div class="tl-item" data-tl>
             <div class="tl-dot"></div>
-            <div class="tl-date">Continuous</div>
+            <div class="tl-date">Ongoing</div>
             <div class="tl-body">
-              <div class="tl-role">Home Lab & CTF Practice</div>
+              <div class="tl-role">Home Lab &amp; CTF Practice</div>
               <div class="tl-org">TryHackMe · VMware · Personal Projects</div>
-              <p>Active on TryHackMe and maintaining a personal VMware home lab running Kali Linux, Ubuntu, and vulnerable VMs. Working through practical penetration testing and vulnerability analysis scenarios.</p>
+              <p>Active on TryHackMe and running a VMware home lab with Kali Linux, Ubuntu and vulnerable VMs for practical vulnerability analysis and detection exercises.</p>
             </div>
           </div>
 
@@ -335,7 +395,7 @@
         <div class="contact-inner">
           <div class="section-tag">// contact</div>
           <h2>Let's work together</h2>
-          <p class="contact-sub">I'm actively looking for internships and junior cybersecurity roles starting autumn 2026. If you're hiring, or just want to connect, I'd love to hear from you.</p>
+          <p class="contact-sub">I'm looking for summer internships in 2027 and graduate roles starting after June 2027 &mdash; in security operations, secure development, GRC or security awareness. If you're hiring, or just want to talk security, I'd love to hear from you.</p>
           <div class="contact-options">
             <a href="mailto:vennelasharma0912@gmail.com" class="contact-card">
               <i class="fa fa-envelope"></i>
@@ -367,7 +427,7 @@
     <footer class="footer">
       <div class="footer-inner">
         <span class="footer-brand">[VS] Vennela Sharma</span>
-        <span class="footer-copy">COPYRIGHT · Built with HTML, CSS & JavaScript · 2026</span>
+        <span class="footer-copy">&copy; 2026 · Built with HTML, CSS &amp; JavaScript</span>
       </div>
     </footer>
 

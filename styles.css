@@ -140,7 +140,8 @@ a { text-decoration: none; color: inherit; }
   transform: scaleX(0);
   transition: transform 0.2s;
 }
-.nav-links .nav-link:hover { color: var(--green); }
+.nav-links .nav-link:hover,
+.nav-links .nav-link.active { color: var(--green); }
 .nav-links .nav-link:hover::after { transform: scaleX(1); }
 .nav-cta {
   padding: 0.45rem 1rem;
@@ -508,9 +509,67 @@ a { text-decoration: none; color: inherit; }
 .cta-inner p { font-size: 0.85rem; }
 
 /* =============================================
+   COURSEWORK
+   ============================================= */
+.coursework-section { background: var(--bg2); }
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.course-group {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.6rem 1.8rem;
+}
+.course-group h3 {
+  font-size: 1rem;
+  color: var(--text-head);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.course-group h3 i { color: var(--green); font-size: 0.9rem; }
+.course-group ul { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
+.course-group li {
+  position: relative;
+  padding-left: 5.2rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.45;
+}
+.course-group .code {
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--green);
+}
+.course-group .now,
+.course-group .next {
+  display: inline-block;
+  margin-left: 0.4rem;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.1rem 0.5rem;
+  border-radius: 100px;
+}
+.course-group .now  { color: var(--bg); background: var(--green); }
+.course-group .next { color: var(--text-dim); border: 1px solid rgba(255,255,255,0.15); }
+
+/* =============================================
    SKILLS
    ============================================= */
-.skills-section { background: var(--bg2); }
+.skills-section { background: var(--bg); }
 
 .skills-layout {
   display: flex;
@@ -551,6 +610,7 @@ a { text-decoration: none; color: inherit; }
   cursor: default;
 }
 .skill-item img { width: 22px; height: 22px; object-fit: contain; }
+.skill-icon { width: 22px; text-align: center; color: var(--green); font-size: 0.95rem; }
 .skill-item:hover {
   border-color: var(--border-h);
   background: var(--green-dim);
@@ -560,7 +620,7 @@ a { text-decoration: none; color: inherit; }
 /* =============================================
    EXPERIENCE / TIMELINE
    ============================================= */
-.experience-section { background: var(--bg); }
+.experience-section { background: var(--bg2); }
 
 .timeline {
   position: relative;
@@ -622,7 +682,7 @@ a { text-decoration: none; color: inherit; }
    CONTACT
    ============================================= */
 .contact-section {
-  background: var(--bg2);
+  background: var(--bg);
   border-top: 1px solid var(--border);
 }
 .contact-inner {
@@ -711,12 +771,15 @@ a { text-decoration: none; color: inherit; }
   .about-links { flex-direction: row; flex-wrap: wrap; justify-content: center; }
 
   .projects-grid { grid-template-columns: 1fr; }
+  .course-grid { grid-template-columns: 1fr; }
   .project-card.featured { grid-column: span 1; }
 
   .hero-stats { gap: 1rem; padding: 1rem 1.5rem; }
 }
 
 @media (max-width: 640px) {
+  .course-group { padding: 1.3rem 1.2rem; }
+
   .nav-links {
     position: fixed;
     top: var(--nav-h);
@@ -745,4 +808,12 @@ a { text-decoration: none; color: inherit; }
   .timeline { padding-left: 16px; }
   .tl-item { padding-left: 2rem; }
   .tl-dot { left: -17px; }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  #hero-canvas { display: none; }
+  [data-reveal], [data-card], .tl-item { opacity: 1; transform: none; transition: none; }
+  .dot, .scroll-line { animation: none; }
 }
